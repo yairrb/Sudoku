@@ -30,8 +30,8 @@ public class Sudoku {
 	public void deleteBox(int positionX, int positionY) {
 		this.boxes[positionX][positionY].setValue(0);
 	}
-	
-	public void resetBox (Box boxToDelete) {
+
+	public void resetBox(Box boxToDelete) {
 		this.boxes[boxToDelete.getPositionX()][boxToDelete.getPositionY()].setValue(0);
 	}
 
@@ -42,15 +42,15 @@ public class Sudoku {
 	public void setBoxes(Box[][] boxes) {
 		this.boxes = boxes;
 	}
-	
+
 	@Override
 	public String toString() {
 		String ret = "\n";
-		for (int x = 0 ; x < 9 ; x++ ){
-			for( int y = 0 ; y < 9 ; y++ ){
-				ret+=this.boxes[x][y].toString();
-				if ( y == 8 ){
-					ret+="\n";
+		for (int x = 0; x < 9; x++) {
+			for (int y = 0; y < 9; y++) {
+				ret += this.boxes[x][y].toString();
+				if (y == 8) {
+					ret += "\n";
 				}
 			}
 		}
@@ -78,8 +78,5 @@ public class Sudoku {
 			return false;
 		return true;
 	}
-	
-	
-	
 
 }

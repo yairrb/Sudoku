@@ -92,10 +92,10 @@ public class Box {
 	public void setSection(int section) {
 		this.section = section;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "["+this.value+"]";
+		return "[" + this.value + "]";
 	}
 
 	@Override
@@ -119,8 +119,6 @@ public class Box {
 		if (getClass() != obj.getClass())
 			return false;
 		Box other = (Box) obj;
-		if (editable != other.editable)
-			return false;
 		if (positionX != other.positionX)
 			return false;
 		if (positionY != other.positionY)
