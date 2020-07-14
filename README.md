@@ -22,6 +22,8 @@ Basicamente consiste en evaluar las casillas que pueden escribirse y borrarse no
 
 #NOTA: si el sudoku no puede ser resulto, el valor de retorno es el mismo sudoku ingresado al comienzo(no se podra resolver si no cumple con las reglas)
 
+# Sudoku
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 I wanted to solve a Sudoku. To archive that I use Backtracking because it would be better than a brute force algorithm.
 This sudoku is an easy representation in Java in order to archive the solve algorithm. It has no Exception handling.
 I made some unit Test to check if it's working fine.
